@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Comapany HR portal</title>
+        <link rel="icon" href="images/icon.png">
+      <style>
+        body{
+             margin: 0%;
+             padding: 0%;
+            background-color: #038383;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header,footer{
+            background: color #03c3c3;
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display: inline;
+            padding: 20px;
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        .registerform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+
+
+
+        .button svg{
+            left: 50%;
+            top: 50%;
+            stroke: var(--icon);
+            stroke-width: 2px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+            transform: translate(-50%,-50%);
+            stroke-dashoffset: var(--svg-o,17px);
+            stroke-dasharray: 17px;
+            transition:stroke-dashoffset.3s ease;
+
+        }
+        table{
+
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+        }
+
+        .contactus{
+            text-align: center;
+        }
+
+        th,td{
+            border: 1px solid;padding: 8px;
+
+        }
+        
+        .employetable{
+            text-align: center;
+        }
+      </style>
+
+
+    </head>
+<body>
+    <header>
+        <nav>
+       <h1> Welcome to company HR portal</h1> 
+       <ul>
+        <li class="navitem"><a href="#employee-registration">Employee registration</a></li>
+        <!--this labove link will redirecy to section 1-->
+        <li  class="navitem"><a href="#employee-directory">Employee directory</a></li>
+        <li  class="navitem"><a href="#contact-us">Contact us</a></li>
+       </ul> 
+        </nav>  
+    </header>
+    <image src="images/Screenshot 2024-09-06 231115.png" style="width: 100%;"></image>
+
+    <section id="Employee-registration" class="registerform"> 
+       <h2>Employee Registration</h2>
+       <p>Fill this form to register as Employe</p>
+       
+        <form action="mailto:vaibhavibhajibhakare@gmail.com" method="post">
+           <br> <label for="name">Name:</label>
+            <input type="text" id="name">
+            <br><br>
+
+            <label for="email">Email Id</label>
+            <input type="email" id="email">
+            <br><br>
+
+            <label for="password">password</label>
+            <input type="password" id="password"> 
+            <br><br>
+
+            
+            <label for="Age">Age</label>
+            <input type="number" id="Age">
+            <br>
+         
+            <label>type a message</label><br>
+            <textarea name="yourmessage" rows="10" cols="20"></textarea><br>
+            
+            <label for="role">Select role</label>
+            <select>
+                <option>Software Engineer</option>
+                <option>Developer</option>
+                <option>Product Manager</option>
+                <option>Designer</option>
+                <option>HR representative</option>
+            </select><br><br>
+            
+            <label for="date">Joining Date</label>
+            <input type="date" id="date">
+            <br><br>
+
+            <input type="submit">
+        </section>
+
+            <section id="employee-directory" class="employetable">
+                <h1>Welcome to company HR portal</h1>
+                <p>Lists of all registered Employee</p>
+                <table>
+                    <tr>
+                        <th>Employe ID</th>
+                        <th>Employe Name</th>
+                        <th>Employe Role</th>
+                    </tr>
+                    <tr>
+                        <td>23131026</td>
+                        <td>Vaibhavi Bhajibhakare</td>
+                        <td>Software Engineer </td>
+                    </tr>
+                    <tr>
+                        <td>23131027</td>
+                        <td>Rakesh Sharma</td>
+                        <td>Developer </td>
+                    </tr>
+                    <tr>
+                        <td>23131069</td>
+                        <td>Lisa Gupta</td>
+                        <td>Designer </td>
+                    </tr>
+
+                </table>
+            </section>
+            
+
+            <section id="contact us" class="contactus">
+                <h2>Contact Us</h2>
+                <p>You can contact us at company@official.com or visit us between 9AM-6PM</p>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.702348357509!2d75.88990642695312!3d17.66425110000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc5d1f0f74317fb%3A0x5f67c093ac0c7ec8!2sSolapur%20Railway%20Station!5e0!3m2!1sen!2sin!4v1725564927465!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></iframe>
+              </section>
+            <footer>
+                <p>&copy; 2024 Company Name</p>
+            </footer>
+
+        
+        </form>
+    
+</body>
+</html>
